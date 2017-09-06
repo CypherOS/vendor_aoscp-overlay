@@ -6,10 +6,12 @@ touching the core framework.
 
 How to use
 ===================
-In order to use our overlays, add:
+In order to use our overlays, set:
 
-    include vendor/overlay/aoscp/configs/common.mk
+    TARGET_USES_AOSCP_OVERLAY := true
 
-at the end of vendor/aoscp/configs/common.mk.
+in your devices BoardConfig.mk.
 
-This is included by default
+This enables the default aoscp overlay which maintains the aosp interface,
+no extra bells and whistles. The Google Overlay is used by default in our
+releases.
