@@ -6,10 +6,11 @@ touching the core framework.
 
 How to use
 ===================
-In order to use our overlays, add:
+In order to use our overlays, set:
 
-    include vendor/overlay/aoscp/configs/common.mk
+    TARGET_USES_GOOGLE_OVERLAY := true
 
-at the end of vendor/aoscp/configs/common.mk.
+in your devices BoardConfig.mk.
 
-This is included by default
+This enabled by default, set it to false it you do not wish to use
+the Google Overlay.
